@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <title> Avalon Adventures </title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/283a3ad56b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <section class="header">
+        
+        <nav>
+            <div class="logo">
+                <img src="Avalon-Adventures-Transparent.png" class="logo">
+            </div>
+            <div class="navbar" id="navLinks">
+                <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Services</a></li> 
+                        
+                </ul>
+            </div>
+        
+        </nav>
+        <span class="material-symbols-outlined" id="navLinks" onclick="showMenu()">
+            menu
+            </span>
+    </section>
+    <div class="content">
+        <div class="banner">
+            <h1>TRAVEL & <br> EXPERIENCE
+            </h1>
+            <p>The Avalon Peninsula of Newfoundland</p>
+            <a href="#" class="hero-btn">Learn more</a>
+        </div>   
+    </div>
+
+    <!------Javascript to toggle the Menu------>
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+
+
+</body>
+</html>
